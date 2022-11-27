@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | Order summary card</title>
 
@@ -17,43 +19,39 @@
 </head>
 <body>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ricardo Franca</a>.
+    Coded by <a href="#">Ricardo Franca</a>
+
+    <main>
+    <img src="images/illustration-hero.svg" alt="illustration of hero listening to music">
+
+    <section>
+      <h1>Order Summary</h1>
+      <span id="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</span>
+
+      <div class="plan-information">
+        <div class="music-price">
+          <img src="images/icon-music.svg" alt="music icon">
+            <div class="pricing">
+              <strong>Annual Plan</strong>
+              <span>$59.99/year</span>
+            </div>
+        </div>
+        <a href="#">Change</a>
+      </div>
+
+      <button id="proceed">Proceed to Payment</button>
+      <a href="#" id="cancel-order">Cancel Order</a>
+
+    </section>
+
+  </main>
 
   
 
-  </div>
-  
-  <div class="container">
-      <div class="main-image">
-         <img src="images/illustration-hero.svg" alt=""> 
-      </div>
-      <div class="order-summary">
-        <h2 id="summary">Order Summary</h2>
-        <p id="description"> <br> You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>  
-      </div>
-
-      <div class="plan">
-
-      </div>
-
-      <div class="order-buttons">
-
-      </div>
   </div>
   
 </body>
